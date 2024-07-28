@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color-primario: #021526;
+    --color-secundario: #E2E2B6;
+    --color-tersiario:#6EACDA;
+    --color-cuarto:#03346E;
+    --fuente-monserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+.header{
+padding: 2% 0% 0% 11%;
+
+}
+.headerMenu{
+    display: flex;
+    gap: 40px;
+
+}
+.headerLink{
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-tersiario) ;
+    text-decoration: none;
+}
+
+.presentacion{
+    padding: 5% 0%;
+    display: flex;
+    align-items: center;
+    margin: 5% 5%;
+    justify-content: space-between;
+    gap: 82px;
+}
+.presentacionConteniado{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.presentacionConteniadoTitulo{
+    padding-left: 15%;
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+.tituloDestaque{
+    color:var(--color-tersiario);
+}
+.presentacionConteniadoTexto{
+    padding-left: 15%;
+    font-size: 1.5rem;
+    font-family: var(--fuente-monserrat);
+}
+.presentacionEnlases{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.presentacionEnacesLink{
+width: 60%;
+text-align: center;
+padding: 21.5px 15px;
+border-radius: 8px; 
+font-family: var(--fuente-monserrat);
+font-size: 1rem;
+font-weight: 600px;
+text-decoration: none;
+color: var(--color-secundario);
+border: 2px solid var(--color-tersiario);
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.presentacionEnacesSubtitulo{
+    font-family: var(--fuente-monserrat) ;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.presentacionEnacesLink:hover{
+    background-color:var(--color-cuarto);
+}
+.precentacionImagen{
+    width: 50%;
+}
+.Footer{
+background-color:var(--color-tersiario);
+padding: 24px;
+color: var(--color-primario);
+text-align: center;
+font-family:var(--fuente-monserrat);
+font-size: 1.5rem;
+font-weight: 400;
+}
+@media (max-width:1200px){
+.header{
+    padding: 10%;
+}
+.headerMenu{
+    justify-content: center;
+}
+.presentacion{
+    flex-direction: column-reverse;
+    padding: 5%;
+}
+.presentacionConteniado{
+    width: auto;
+}
+
+}
